@@ -66,7 +66,7 @@ extension DataRequest {
     }
     
     /// Utility function for checking for errors in response
-    internal static func checkResponseForError(request: URLRequest?, response: HTTPURLResponse?, data: Data?, error: Error?) -> Error? {
+    public static func checkResponseForError(request: URLRequest?, response: HTTPURLResponse?, data: Data?, error: Error?) -> Error? {
         if let error = error {
             return error
         }
